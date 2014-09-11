@@ -6,4 +6,83 @@ The unit was part of the Natural Science course of a class of thirty 14-15 years
 The teacher was the usual Science teacher (first author) and an external researcher (third author) was present as an observer during all sessions. It was recorded the activity of two groups of students both on audio and video.
 
 *Instructional context*
-Soil science was the subject of the unit we use as context of our study. The main items of this unit included: factors involved in soil formation, soil composition and structure, uses of soil, soil weathering
+Soil science was the subject of the unit we use as context of our study. The main items of this unit included: factors involved in soil formation, soil composition and structure, uses of soil, soil weathering and reclamation **[recovery ou restoration??]**
+The unit comprised four phases as follows:
+* Phase 1. Introduction. The pupils were given a fictional land allocation problem in the guise of a request for help by their local town council, whose budget was supposedly too small to allow professional expert advise. Students had to decide how to allocate three available plots of land for use as a football pitch, a garden for use by a gardening school and a block of council offices. They had to have into account existing data on the properties of each plot soil.
+* Phase 2. Approaching the problem. The students looked up basic information on the formation, composition, management and reclamation of soil. They were Aided by the teacher and used the teaching material for it.
+* Phase 3. Evaluating the data. The pupils applied the knowledge from Phase 2 to the fictional data characterizing the threed plots in order to obtain a solution to the problem.
+* Phase 4. Final report. Each group presented a final report with reasoned conclusions.
+
+*Data sources and analytical methods*
+All sessions in this unit were videotaped and sound was captured with external microphones to enhance its quality. For the present study we focused on one group interactions of four male students during a session. A total amount of 50 minutes were transcribed and analysed. The session took place during Phase 2 which as previously mentioned, was mainly concerned in activate pupil's knowledge. The following questions were discussed by the students:
+1. How long does it take a soil to be formed?
+2. Where do the materials of the soils come from?
+3. Why soils fertilized with manure are more fertile than those with inorganic fertilizers?
+As pointed out by Gee (1991) discourse in the classroom reflects both the actions and the language of a community of people. To outline what pupils and teacher do and how they do it, we designed a network of analysis of actions (Fig. 1). This is a modified version of the observation framework designed by Hollon et al. (1980) and Newton et al. (1999) using the systemic network (Bliss et al. 1983). Conventional turn was taken as unit of analysis.
+
+(Insert Fig. 1 about here)
+
+Argumentation analysis was carried out using a modified Toulmin's argument scheme. Changes were made attending to different proposals from classroom discourse analysis (Russell, 1983; Pontecorvo and Girardet, 1993; Alvarez, 1997; Jiménez, 1998; Duschl et al. 1999). Argumentation involves making statements (Lyons, 1997) and much of the importance of the discussion process lies in the structures in which these are integrated; as an analytical method, Toulmin's scheme allows us to identify the relationships between statements and the way pupils negotiate and construct arguments within the context of the activity.
+Thus for the purposes of the present study we categorised the elements of students' arguments as:
+(a) claims, conclusions whose merits are sought to establish,
+(b) warrants, statements that justify the connection between data and conclusions,
+(c) backing, knowledge of theroretical nature used to support the warrant,
+(d) hypothetical and empirical data, facts referred to as basis for the conclusions,
+(e) challenges, statements questioning the validity of a claim,
+(f) opposition, any claim that denies what has been claimed by another, with or without giving reasons,
+(g) concessions, any claim that concedes something to an addressee, admitting a point claimed in the dispute,
+(h) qualifiers, qualification or restriction, statement specifying the conditions for the hypothesis or conclusion,
+(i) rebuttals, sepecifying the conditions for discarding the hypothesis or conslusion.
+
+ResUlts
+----------------------------------
+*Analysis of interactions & arguments*
+----------------------------------
+A total of 299 contributions were made during the 50 minutes of converstions taped and transcribed. From them, 19 (6.35%) were made by the teacher. Ten of these interactions were with an individual student and nine with the whole class. Teacher's actions comprised:
+* to individual pupils:
+    * resolving doubts (4)
+    * asking questions (6)
+* to the whole class:
+    * giving instructions (2)
+    *directing joint tasks (7)
+
+(insert Fig. 2 about here)
+
+```{r, fig.height=4, fig.width=5, fig.show='hold'}
+teach_int = data.frame(IF=c(0, 0, 0), RD=c(4, 0, 0), EX=c(0, 0, 0),
+                       GI=c(0, 0, 2), DT=c(0, 0, 7), NB=c(0, 0, 0),
+                       Q=c(6, 0, 0),
+                       row.names=c('IN', 'GP', 'GC'))
+title = 'Total teacher interactions by addressee'
+barplot(rowSums(teach_int),  main=title)
+
+title = 'Total teacher interactions by action'
+barplot(colSums(teach_int),  main=title)
+```
+Most of the contributions were made by students. Total contribution frequencies by kind of interaction are:
+* pupil-pupil: 47 (16.7%)
+* pupil-teacher: 16 (5.7%)
+* pupil-group: 209 (74.1%)
+* pupil-other group: 2 (0.7%)
+* pupil-class: 8 (2.8%)
+Most of the interactions were between pupils to explain or clarify ideas or concepts to the working group (Fig. 3). Dialogue pupil-pupil were much less frequent and pupil-teacher interactions were even less so, usually taking place to ask questions.
+From de pupils contributions 224 (79.4%) were on-task and 58 (20.6%) were not directly related to the topic in question, although many arose from discussion of it. Most **[canto?]** of the contributions off task were related to scientific topics.
+
+
+
+
+
+```{r, fig.height=4, fig.width=5, fig.show='hold'}
+student_int = data.frame(EX=c(9, 0, 65, 0, 0, 0), IL=c(25, 0, 36, 0, 0, 0), 
+                         Q=c(4, 8, 24, 2, 0, 0), TS=c(8, 0, 26, 0, 0, 0), 
+                         RE=c(0, 0, 1, 0, 0, 0), S=c(0, 8, 0, 0, 8, 0), 
+                         DU=c(0, 0, 53, 0, 0, 0), BC=c(0, 0, 3, 0, 0, 0), 
+                         TD=c(0, 0, 0, 0, 0, 0), RS=c(1, 0, 1, 0, 0, 0),
+                         row.names=c('PP', 'PT', 'PG', 'PO', 'PC', 'GG'))
+title = 'Total students interactions by addressee'
+barplot(rowSums(student_int), main=title)
+
+title = 'Total students interactions by action'
+barplot(colSums(student_int),  main=title)
+```
+
