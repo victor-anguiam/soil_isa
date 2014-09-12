@@ -34,7 +34,7 @@ Thus for the purposes of the present study we categorised the elements of studen
 (h) qualifiers, qualification or restriction, statement specifying the conditions for the hypothesis or conclusion,
 (i) rebuttals, sepecifying the conditions for discarding the hypothesis or conslusion.
 
-ResUlts
+Results
 ----------------------------------
 *Analysis of interactions & arguments*
 ----------------------------------
@@ -54,10 +54,11 @@ teach_int = data.frame(IF=c(0, 0, 0), RD=c(4, 0, 0), EX=c(0, 0, 0),
                        Q=c(6, 0, 0),
                        row.names=c('IN', 'GP', 'GC'))
 title = 'Total teacher interactions by addressee'
-barplot(rowSums(teach_int),  main=title)
+barplot(rowSums(teach_int),  main=title, col='light blue')
 
 title = 'Total teacher interactions by action'
-barplot(colSums(teach_int),  main=title)
+barplot(colSums(teach_int),  main=title, col='pink')
+teach_int; round(100*teach_int/sum(teach_int), 1)
 ```
 Most of the contributions were made by students. Total contribution frequencies by kind of interaction are:
 * pupil-pupil: 47 (16.7%)
@@ -67,10 +68,17 @@ Most of the contributions were made by students. Total contribution frequencies 
 * pupil-class: 8 (2.8%)
 Most of the interactions were between pupils to explain or clarify ideas or concepts to the working group (Fig. 3). Dialogue pupil-pupil were much less frequent and pupil-teacher interactions were even less so, usually taking place to ask questions.
 From de pupils contributions 224 (79.4%) were on-task and 58 (20.6%) were not directly related to the topic in question, although many arose from discussion of it. Most **[canto?]** of the contributions off task were related to scientific topics.
+Contributions made on-task for each of the categories established were as follows:
+**[As porcentaxes son respeito ao total ou só a on-task, no texto non queda claro e no cálculo saen respeito ao total]**
+* explaining or clarify ideas or concepts: 74 (26.2%)
+* giving instructions and leaing group: 61 (21.6%)
+* asking questions: 38 (13.5%)
+* taking a stance about something: 34 (12.1%)
+* reading: 1 (0.4%)
+* being a spokesman: 16 (5.7%)
+It can be seen that most of the contributions involved giving explanations, asking questions and taking a stance about something. The percentage number of explanations was higher than that of questions due to each question can draw several explanations, either complementary or opposed. There was a significantly higher number of contributions in 'giving instructions and leading a group' categorie, which corresponded to contributions made in order to direct the discussion (i.e. when one student tried to focus the discussion) or logistical contributions (i.e. contributions made in order to organise the task). The three forward analysed excerpts constitue 110 out of 224 total task contributions.
 
-
-
-
+(Insert Fig. 3 about here)
 
 ```{r, fig.height=4, fig.width=5, fig.show='hold'}
 student_int = data.frame(EX=c(9, 0, 65, 0, 0, 0), IL=c(25, 0, 36, 0, 0, 0), 
@@ -80,9 +88,53 @@ student_int = data.frame(EX=c(9, 0, 65, 0, 0, 0), IL=c(25, 0, 36, 0, 0, 0),
                          TD=c(0, 0, 0, 0, 0, 0), RS=c(1, 0, 1, 0, 0, 0),
                          row.names=c('PP', 'PT', 'PG', 'PO', 'PC', 'GG'))
 title = 'Total students interactions by addressee'
-barplot(rowSums(student_int), main=title)
+barplot(rowSums(student_int), main=title, col='light blue')
 
 title = 'Total students interactions by action'
-barplot(colSums(student_int),  main=title)
+barplot(colSums(student_int),  main=title, col='pink')
+student_int; round(100*student_int/sum(student_int), 1)
 ```
 
+*Analysis of the argumentation*
+As previously mentioned, the data was taken from transcripted conversations between the members of a group of four pupils during two classes. The analysis consisted on indentify the parts of the dialogue that correspond to statements. This statements are defined as those parts of the discussion involved in reaching of conclusions using hypothesis and data to justify, agree, oppose, etc.
+
+Excerpt 1: Response to the question: How long does it take soils to be formed? (a) between 1 and 100 years, (b) between 100 and 15 000 years, (c) between 15 000 and 1 000 000 years of more.
+
+**[Aquí van as transcricións]**
+
+The underlying argumentation in the transcribed and categorised fragment corresponds to the joint discussion that took place aiming to explain the reply to the above question.
+The conclusion was made by the pupils choosing what they considered to be the correct option from the different possibilities provided. They arrived at the conclusion by discussing all the options and rejecting those that they did not consider to bo correct. Thus in the reconstructed argumentation scheme (Fig. 4) we considered a complex argument where the warrant in the principal argument is composed of two subsequent arguments. The first option refers to the shortest time interval (1 to 100 years) and the hypothetical data considered in discarding this, is that the mountains would be much more pointed. The implicit warrant is that the mountains would be less eroded. The option 'more than a million years' was rejected with the warrant that the mountains would be more eroded because more time would have passed. The backing in this argument (here, the students' knowledge or general ideas that the students use, not exactly scientific ideas) is related to the concept of erosion being linked with long time intervals and the process of soil formation is understood as a process of sedimentation.
+
+(Insert Fig. 4 about here)
+
+Excerpt 2: Reply to the questio: Where do the materials that form soils come from?
+
+**[Aquí van as transcricións]**
+
+This argument is practically constructed by Agustin alone and he supports it with basic knowledg of geological processes. Alfonso opposes him stating that the parent rock cannot form soil as it dos not form part of it. He expresses this with the phrase *'you can't make something out of nothing'*. However he ends up by giving support to Agustin's proposal by asking *'why can't it have come from a piece of rock?'*, because the reply to it is the conclusion previously established by Agustin.
+The stance taken by Alfonso in this argument does not appear to be related to the substance of the argument (Fig. 5) but rather to assert himself within the group and to dispute Agustin's leadership. He will display this attitude throughout the teaching unit. This explains why once the conclusion is finally established, Alfonso says to Agustion *'Ha, ha, that made you work, eh!'*.
+
+(Insert Fig. 5 about here)
+
+Excerpt 3: Reply to the question: Why soils fertilized with manure are more fertile than those fertilized with inorganic fertilizers?
+
+**[Aquí van as transcricións]**
+
+This argument (Fig. 6) is the least clear of the three analysed and at the same time, the conclusion is more indirect and less convincing to the group. In fact, the group discussed the topic again because Agustin is not sure about the conclusion. The firs warrants were supplied by Antonio '(...) those fertilized with manure have got more (...)' and by Agustin when he lists the different kinds of inorganic fertilizer in a statement that he completes when he outlines the uses for each one.
+This argument shows two clear differences from the previous ones. Firstly in the use of warrants and backin obtained from the pupils' own experiences. All come from families in which agricultural and farming activities have an economic significance. The second difference is that the discussion diverges to unrelated topics, which are not involved in the argument. As an example, Antonio leads the conversation on to the cultivation of bamboo when he comments 'I'm going to see if I can grow some canes man'.
+Later on, out of the transcription fragment shown here, the same happens again. This time it stems from an attempt to find a relation between the food that animals eat and the value of the fertilizer they produce. Comments are made about the problem for rabbits to ingest a plant known as 'maruxa' (*Stellaria media L.*) as when they eat it they die. The explanation for these divergences also lies in the relation between the argumentation and the pupils' own experiences and beliefs.
+
+(Insert Fig. 6 about here)
+
+Discussion
+----------------------------------
+It was clear from these results that the learning environment generated by these tasks encouraged the pupils to reason and argue. Students with low competence level, who failed to solve tasks by themselves, improved when interacting with their peers.
+Analysis of the substance of the discussion using Toulmin's scheme allowed statements to be identified and the complexity of the argumentation to be evaluated. The backings used by the pupils give us an idea of the complexity and the fitting of mental models, which they construct throughout the discussion. For example in the first excerpt, students use the term 'erosion' as the process of formation of a soil; the idea behind their conversation appears to be that soil is formed by the breakdown of rocks originating from mountains, then the resulted material is transported and undergoes sedimentation, so that with time everything becomes flatter. These ideas are similar to those describe by Happs (1981) in a study carried out in New Zealand on aspects of students' understanding of soil. It is interesting to compare the accepted definitions of the terms erosion and weathering with the terms used by the pupils. In the literature 'weathering' refers to chemical, physical or biological decay of rocks in situ, near or at the surface. Erosion is defined as any of the processes whereby debris or rock material is loosened or dissolved and remove from any part of the Earth's surface and includes weathering, solution, corrosion and transportation (Dove, 1997). Dove (1997) states that most students appreciated that weathering occurs in situ, whereas erosion involves movement of the agent and the material it carried. In Excerpt 2, the term erosion is once again used to describe how the rock breaks down to form sand and soil. In this excerpt, the discussion shows the difficulty that the pupils had in accepting the idea that soils can be formed in situ. We hope to find out more about the evolution of their ideas when all the transcripts of this unie are analysed.
+Use of the analyticla scheme desisgned to describe student and teacher interactions also allowed us to examine the roles played by the pupils and the teacher during the activity, by categorizing their actions.
+The roles played by the pupils and the teacher in the class were different to those in traditional classes. The classroom discussion was not dominated by the teacher, whose role was more like that of another classmate. The teacher resolved doubts by asking questions, thereby forcing the pupils to make an effort to express their ideas (e.g. What do you mean that they would be more eroded?). He also challenged the students thinking (e.g. Why would tere be more soil and less rock?), and as a last resort, provided information that pupils solicited.
+The task required students to share their thinking and pool their knowledge, thus creating a context for examining their ideas. Our observations revealed that the conversations focused mainly on the discussion of pupils' ideas. The pupils spent most of their time throughout the conversations explaining their ideas or trying to clarigy them. The role of 'promoters of reflecion' is important in developing the group's reasoning processes (Hogan, 1999). This role was played here, in the first activity, by the teacher, and in the seccond by a pupil (Alfons), when they challenged the ideas expressed by the other members of the group.
+It has previously been pointed out (Keys, 1997) that the type of arguments constructued by students depend on their personal theories concerning scientific topics. However, there are topics about which they have never given any thought, so they are activating ideas while constructing arguments, that come from their own personal theories based on knowledge already provided about other topics, knowledge from their own daily experience and also ideas that emerge and are consolidadted during discussion of the activity. In Excerpt 3 the pupils frequently referred to their personal experiences during argumentation; thus enriching the discussion with the pupils' knowledge, gained from their lives in a rural environmet.
+
+Educational significance
+----------------------------------
+Nowadays it is considered important that students develop argumentative skills. To exercise these skills students must be given opportunities to learn how to structure their own ideas and to analyse their opinios and those of others. Scientific discourse should exhibit clarity of argument, precision in distinguishing among the various factors that may be relavant to the phenomena discussed, and consistency of facts. These qualities should therefore be developed by pupils in the course of their scientific training. This applies to all pupils -not only those intending to pursue a scientific career- because today's citizens are continually called upon to have opinions about matters of public or private concern, which will be based on the repors or declarations of professional scientists. We hope that this example of the implementation and analysis of classroom discourse will encourage other teachers to change the conversational patterns in their classrooms in order to offer good opportunities for argumentation.
